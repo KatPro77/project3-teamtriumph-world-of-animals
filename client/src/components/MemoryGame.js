@@ -97,7 +97,7 @@ class MemoryGame extends React.Component {
             )
           })}
            <div className='col-md-2'>
-           <a href="ClickeyGame"><input type="button"className="Mybutton" value="Play Again"></input></a>
+           <a href="games"><input type="button"className="Mybutton" value="Play Again"></input></a>
       </div>
         </div>
         </Animated>
