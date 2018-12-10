@@ -56,10 +56,7 @@ export default class Navbar extends Component {
            </IconButton>
 
 
-           <Typography variant="h6" color="inherit">
-             World of Animals
-           </Typography>
-
+             <Button className="col-md-3 myspace"></    Button>
            <Button
              aria-owns={anchorEl ? 'simple-menu' : undefined}
              aria-haspopup="true"

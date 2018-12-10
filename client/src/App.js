@@ -6,6 +6,8 @@ import Navbar from './components/Navbar';
 import Landing from './pages/landing';
 import Cams from './pages/Cams';
 import Games from './pages/Games';
+import MemoryGame from './components/MemoryGame';
+
 
 class App extends Component {
   render() {
@@ -16,12 +18,14 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Landing} />
             {/* <Route exact path="/cams" component={Cams} /> */}
-            <Route exact path="/games" component={Games} />
+            <Route exact path="/games" component={MemoryGame} />
+            {/* <Route exact path="/games" component={Fishgame} /> */}
           </Switch>
         </div>
       </Router>
     );
   }
 }
+
 
 export default App;
