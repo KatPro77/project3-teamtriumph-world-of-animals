@@ -80,27 +80,24 @@ const styles = theme => ({
 
 
 function ButtonBases(props) {
-  const { classes, animal, images } = props;
+  
+  const { classes } = props;
 
   return (
     <div className={classes.root}>
-      {images.map(image => (
         <ButtonBase
           focusRipple
-          key={animal.id}
+          key={classes.id}
           className={classes.name}
           focusVisibleClassName={classes.focusVisible}
           style={{
-            width: image.width,
+            width: props.width,
           }}
         >
           <span
             className={classes.imageSrc}
             style={{
-     
-      backgroundImage: "src/client/assets/images/cams/gorilla",
-     
-      
+              backgroundImage: `url(${props.url})`,
             }}
           />
           <span className={classes.imageBackdrop} />
@@ -111,12 +108,11 @@ function ButtonBases(props) {
               color="inherit"
               className={classes.imageTitle}
             >
-              {animal.name}
+              {classes.name}
               <span className={classes.imageMarked} />
             </Typography>
           </span>
         </ButtonBase>
-      ))}
     </div>
   );
 }
