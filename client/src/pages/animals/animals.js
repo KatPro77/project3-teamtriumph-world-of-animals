@@ -2,16 +2,17 @@
 import React, { Component } from 'react';
 import './animals.css';
 import Navbar from '../../components/Navbar'
-import Searchbar from '../../components/searchbar/searchbar.js'
-import Searchresults from '../../components/searchresults/searchresults.js'
+import SearchCard from '../../components/searchbar/searchbar.js'
+import MediaCard from '../../components/searchresults/searchresults.js'
 
 
 export default class Animals extends Component {
   render() {
     return (
       <div>
-        <Searchbar />
-        <Searchresults />
+        <Navbar />
+        <SearchCard />
+        <MediaCard />
       </div>
 
     );
