@@ -1,0 +1,6 @@
+{
+  "extends": "safe/browser",
+  "rules": {
+    "custom": ["rules", "per", "project", "or", "environment"]
+  }
+}
