@@ -22,8 +22,6 @@ const gameImages = [
   ];
 
 
-
-
 class Games extends Component {
 
 state = {
