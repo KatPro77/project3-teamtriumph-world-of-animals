@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import './Navbar.css';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { Link } from 'react-router-dom';
@@ -41,29 +39,42 @@ export default class Navbar extends Component {
                </MenuItem>
 
                <MenuItem onClick={this.handleClose}>
-                 <Link to={'/animals'}>Animal Facts</Link>
+                 <Link to={'/Animals'}>Animal Facts</Link>
                </MenuItem>
 
                <MenuItem onClick={this.handleClose}>
-                  <Link to={'/habitats'}>Live Cams</Link>
+                  <Link to={'/Cams'}>Live Cams</Link>
                 </MenuItem>
 
                <MenuItem onClick={this.handleClose}>
-                <Link to={'/Games'}>Memory Game</Link>
+                <Link to={'/Memory'}>Memory Game</Link>
                 </MenuItem>
+
+                 <MenuItem onClick={this.handleClose}>
+                <Link to={'/Games'}>Games</Link>
+                </MenuItem>
+
+                 <MenuItem onClick={this.handleClose}>
+                <Link to={'/Playfish'}>Fish Game</Link>
+                </MenuItem>
+
             </Menu>
             
            </IconButton>
 
 
-             <Button className="col-md-3 myspace"></    Button>
-           <Button
-             aria-owns={anchorEl ? 'simple-menu' : undefined}
+             <Button className="col-md-3 myspace"  aria-owns={anchorEl ? 'myspace' : undefined}
+             aria-haspopup="true"
+             onClick={this.handleClick}
+           ></    Button>
+
+           {/* <Button
+             aria-owns={anchorEl ? 'myspace' : undefined}
              aria-haspopup="true"
              onClick={this.handleClick}
            >
              Open Menu
-           </Button>
+           </Button> */}
          </Toolbar>
        </AppBar>
      </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Games.css';
-import Navbar from '../../components/Navbar'
-import ButtonBases from '../../components/ComplexButton'
+
+
 
 const gameImages = [
     {
