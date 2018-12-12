@@ -10,45 +10,16 @@ export default class Animals extends Component {
     return (
      
       <div>
+<<<<<<< HEAD
         <SearchCard />
         <MediaCard />
+=======
+         <h1>Hello from Animals Page </h1>
+        
+>>>>>>> 9bb1ebed0b3da5c5048f787c10ef595dd3205a69
       </div>
 
     );
   }
 }
 
-// // $("#find-animal").on("click", (load()) {
-// //   event.preventDefault()
-// // });
-
-// const animal = $("#animal-input").val();
-// const queryURL = "https://www.pixabay.com/api/animals?q=" + type +
-//   "&apikey=10803476-df1ba506200da6c7fb26617df";
-
-// $.ajax({
-//   url:
-//     "https://www.pixabay.com/api/animals?q=" + type +
-//     "&apikey=10803476-df1ba506200da6c7fb26617df",
-
-//   method: "GET"
-// }).then(function (response) {
-//   $("display").empty();
-
-//   for (var i = 0; i <
-//     response.Search.length; i++) {
-
-//    const animal = $("").text(response.Search[i].Animal);
-//    const myNewImage = $("img srce='../assets/animalpics/.. " + response);
-
-//     $("display").append(animal);
-//     $("display").append(myNewImage);
-
-//     $.ajax({
-//       type: "POST",
-//       url: "https://www.pixabay.com/api/animals?q=" + type +
-//         "&apikey=10803476-df1ba506200da6c7fb26617df",
-//       data: data,
-//       success: success,
-//       dataType: dataType
-//     })}});
