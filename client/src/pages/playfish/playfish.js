@@ -3,7 +3,7 @@ import './playfish.css';
 
 
 
-export default class Games extends Component {
+export default class Playfish extends Component {
   render() {
     return (
      <h1>Hello from playfish</h1>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Games.css';
+import ButtonBases from "../../components/ComplexButton/ComplexButton"
 
 
 
@@ -30,7 +31,6 @@ state = {
   render() {
     return (
       <div>
-        <Navbar />
         {this.state.gameImages.map(image=> (
         <ButtonBases 
           image={image.url}
