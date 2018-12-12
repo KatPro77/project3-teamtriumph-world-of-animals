@@ -45,7 +45,6 @@ this.setState({ open: false });
   render() {
     return (
       <div>
-        <Navbar />
         <ButtonBases onClick={this.handleOpen}/>
         <SimpleModalWrapped  />
      </div>
