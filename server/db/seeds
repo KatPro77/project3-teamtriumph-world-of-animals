@@ -1,0 +1,19 @@
+insert into animal list values(
+    001, "Koala", "Mammals", 20, 29, 20. "Herbivores", "Australia"
+);
+
+insert into animal list values(
+    002, "Bald Eagle", "Birds", 10, 7, 28. "Carnivores", "United States"
+);
+
+insert into animal list values(
+    003, "Giant Panda", "Mammals", 300, 5, 20. "Omnivores", "China"
+);
+
+insert into animal list values(
+    004, "Brown Bear", "Mammals", 700, 7, 25. "Omnivores", "Alaska"
+);
+
+insert into animal list values(
+    005, "Cougar", "Mammals", 136, 5, 20, "Herbivores", "Americas"
+);
