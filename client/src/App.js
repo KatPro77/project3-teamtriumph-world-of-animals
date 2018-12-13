@@ -1,12 +1,16 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Landing from './pages/landing';
 import Cams from './pages/Cams';
-import Games from './pages/Games';
-import MemoryGame from './components/MemoryGame';
+import MemoryGame from './pages/Memory';
+import Playfish from './pages/Playfish';
+import Animals from './pages/Animals';
+
+// import { compareAsc } from "date-fns";
+// // import FishGame from './components/FishGame';
 
 
 class App extends Component {
@@ -17,9 +21,10 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Landing} />
-            {/* <Route exact path="/cams" component={Cams} /> */}
-            <Route exact path="/games" component={MemoryGame} />
-            {/* <Route exact path="/games" component={Fishgame} /> */}
+            <Route exact path="/Memory" component={MemoryGame}/>
+            <Route exact path="/Cams" component={Cams}/>
+            <Route exact path="/Playfish" component={Playfish}/> 
+            <Route exact path="/Animals" component={Animals}/>
           </Switch>
         </div>
       </Router>
