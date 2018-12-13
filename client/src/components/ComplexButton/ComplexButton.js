@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { withStyles } from '@material-ui/core/styles'
-import ButtonBase from '@material-ui/core/ButtonBase'
-import Typography from '@material-ui/core/Typography'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import ButtonBase from '@material-ui/core/ButtonBase';
+import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
   root: {
@@ -78,29 +78,24 @@ const styles = theme => ({
 });
 
 
-
 function ButtonBases(props) {
-  const { classes, animal, images } = props;
+  const { classes } = props;
 
   return (
     <div className={classes.root}>
-      {images.map(image => (
         <ButtonBase
           focusRipple
-          key={animal.id}
-          className={classes.name}
+          key={classes.title}
+          className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
-            width: image.width,
+            width: props.width,
           }}
         >
           <span
             className={classes.imageSrc}
             style={{
-     
-      backgroundImage: "src/client/assets/images/cams/gorilla",
-     
-      
+              backgroundImage: `url(${props.url})`,
             }}
           />
           <span className={classes.imageBackdrop} />
@@ -111,12 +106,12 @@ function ButtonBases(props) {
               color="inherit"
               className={classes.imageTitle}
             >
-              {animal.name}
+              {props.title}
               <span className={classes.imageMarked} />
             </Typography>
           </span>
         </ButtonBase>
-      ))}
+      {/* ))} */}
     </div>
   );
 }
