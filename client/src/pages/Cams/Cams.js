@@ -1,56 +1,40 @@
 import React, { Component } from 'react'
 import './Cams.css'
-import SimpleModalWrapped from '../../components/Modal'
-import ButtonBases from '../../components/ComplexButton'
-import Animals from './AnimalInfo'
+import ButtonBases from '../../components/ComplexButton/ComplexButton.js'
+// import Animals from './AnimalInfo'
 
-  
-<<<<<<< HEAD
-// const gorillaCam = [
-//     {
-//       alt:'gorilla cam',
-//       src: "https://www.youtube.com/embed/pHtOPHLhQME",
-//       title: 'Gorilla Cam',
-//       width: '33%',
-//     }
-//   ]; 
-
-//   const bearCam = [
-//     {
-//       alt:'gorilla cam',
-//       src: "https://www.youtube.com/embed/pHtOPHLhQME",
-//       title: 'Gorilla Cam',
-//       width: '33%',
-//     },
-//   ]; 
-
-//   const pandaCam = [
-//     {
-//       alt:'gorilla cam',
-//       src: "https://www.youtube.com/embed/pHtOPHLhQME",
-//       title: 'Gorilla Cam',
-//       width: '33%',
-//     },
-//   ]; 
-=======
-
->>>>>>> 9bb1ebed0b3da5c5048f787c10ef595dd3205a69
+const Animals = [
+ {
+     id: 1,
+     name: 'Gorilla',
+     url: 'https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/m/mountain-gorilla_thumb.ngsversion.1538530889286.adapt.1900.1.jpg',
+     width: '50%'
+   },
+ {
+     id: 2,
+     name: 'Grizzly-Bear',
+     url: 'https://usatbnqt.files.wordpress.com/2018/08/grizzly-bear.jpg',
+     width: '50%'
+   }
+ ];
 
 class Cams extends Component {
-  
-handleOpen = () => {
-  this.setState({ open: true });
-      };
-handleClose = () => {
-this.setState({ open: false });
-      };
 
+  
+ s
   render() {
     return (
       <div>
-        {/* <ButtonBases onClick={this.handleOpen}/> */}
-        <SimpleModalWrapped  />
-     </div>
+        {Animals.map(Animal => (
+        <ButtonBases
+          id={Animal.id}
+          key={Animal.id}
+          name={Animal.name}
+          url={Animal.url}
+          width={Animal.width}
+          />
+        ))}
+      </div>
     );
   }
 }

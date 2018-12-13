@@ -10,13 +10,9 @@ export default class Animals extends Component {
     return (
      
       <div>
-<<<<<<< HEAD
-        <SearchCard />
-        <MediaCard />
-=======
-         <h1>Hello from Animals Page </h1>
+       <SearchCard />
+       <MediaCard />
         
->>>>>>> 9bb1ebed0b3da5c5048f787c10ef595dd3205a69
       </div>
 
     );

@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { withStyles } from '@material-ui/core/styles'
-import ButtonBase from '@material-ui/core/ButtonBase'
-import Typography from '@material-ui/core/Typography'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import ButtonBase from '@material-ui/core/ButtonBase';
+import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
   root: {
@@ -78,17 +78,15 @@ const styles = theme => ({
 });
 
 
-
 function ButtonBases(props) {
-  
   const { classes } = props;
 
   return (
     <div className={classes.root}>
         <ButtonBase
           focusRipple
-          key={classes.id}
-          className={classes.name}
+          key={classes.title}
+          className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           style={{
             width: props.width,
@@ -108,11 +106,12 @@ function ButtonBases(props) {
               color="inherit"
               className={classes.imageTitle}
             >
-              {classes.name}
+              {props.title}
               <span className={classes.imageMarked} />
             </Typography>
           </span>
         </ButtonBase>
+      {/* ))} */}
     </div>
   );
 }
