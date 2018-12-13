@@ -1,23 +1,28 @@
-const router = require("express").Router();
+/* eslint-disable jsx-a11y/img-has-alt */
+/* eslint-disable no-process-env */
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+const router = require('express').Router();
 const axios = require('axios');
 const env = require('dotenv').config();
 
 // example call:
 // http://localhost:8000/api?q=cats
 // the param "q" gets passed down and added with its value to the url that axios calls
-router.route('/')
-  .get((req, res) => {
-    axios
-      .get(
-        `http://pixabay.com/api?key=${process.env.PIXABAY_KEY}&category=animals&safesearch=true`,
-        {
-          params: {
-            q: req.query.q
-          }
+router.route('/').get((req, res) => {
+  axios
+    .get(
+      `http://pixabay.com/api?key=${
+        process.env.PIXABAY_KEY
+      }&category=animals&safesearch=true`,
+      {
+        params: {
+          q: req.query.q
         }
-      )
-      .then(({data}) => (res.json(data)))
-      .catch((err) => res.status(422).json(err));
-  });
+      }
+    )
+    .then(({ data }) => res.json(data))
+    .catch((err) => res.status(422).json(err));
+});
 
 module.exports = router;
