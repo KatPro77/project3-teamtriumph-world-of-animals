@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CssBaseline from '@material-ui/core/CssBaseline';
 // import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -18,6 +19,7 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <CssBaseline />
           <Navbar />
           <Switch>
             <Route exact path="/" component={Landing} />

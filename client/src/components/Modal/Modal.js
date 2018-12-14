@@ -48,7 +48,6 @@ class SimpleModal extends React.Component {
   
   render() {
     const { classes } = this.props;
-    const { animal } = this.props;
 
 const gorillaCam = [
         {

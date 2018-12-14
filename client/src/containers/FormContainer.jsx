@@ -9,11 +9,11 @@
 /* eslint-disable id-length */
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import CheckBox from '../components/userauthentication/CheckBox';
-import Input from '../components/userauthentication/Input';
-import TextArea from '../components/userauthentication/TextArea';
-import Select from '../components/userauthentication/Select';
-import Button from '../components/userauthentication/Button';
+// import CheckBox from '../components/userauthentication/CheckBox';
+import Input from '../components/Input';
+// import TextArea from '../components/userauthentication/TextArea';
+// import Select from '../components/userauthentication/Select';
+import Button from '../components/Button';
 
 class FormContainer extends Component {
   constructor(props) {

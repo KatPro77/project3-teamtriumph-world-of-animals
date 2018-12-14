@@ -23,10 +23,11 @@ const Animals = [
 
 class Cams extends Component {
 
+
+// handleBtnClick = event => {
   
- 
-  
-  
+//     const btntype = event.target.attributes.getNamedItem(Animals.id);
+
   render() {
     return (
       <div>
