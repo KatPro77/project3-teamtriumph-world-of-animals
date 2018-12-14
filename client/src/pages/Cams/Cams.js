@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import './Cams.css'
 import ButtonBases from '../../components/ComplexButton/ComplexButton.js'
-// import Animals from './AnimalInfo'
+import SimpleModalWrapped from '../../components/Modal/Modal.js'
+import { Link } from 'react-router-dom'
+import Button from '@material-ui/core/Button';
 
 const Animals = [
  {
      id: 1,
      name: 'Gorilla',
      url: 'https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/m/mountain-gorilla_thumb.ngsversion.1538530889286.adapt.1900.1.jpg',
-     width: '50%'
+     width: '50%',
+     src: "https://www.youtube.com/embed/pHtOPHLhQME"
    },
  {
      id: 2,
@@ -21,7 +24,9 @@ const Animals = [
 class Cams extends Component {
 
   
- s
+ 
+  
+  
   render() {
     return (
       <div>
@@ -32,7 +37,7 @@ class Cams extends Component {
           name={Animal.name}
           url={Animal.url}
           width={Animal.width}
-          />
+        />
         ))}
       </div>
     );
