@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './MemoryGame.css';
 import {Animated} from "react-animated-css";
 
+
 class MemoryGame extends React.Component {
   constructor(props) {
    super(props);
@@ -80,10 +81,11 @@ class MemoryGame extends React.Component {
 
   render() {
     return(
-        // render the main HTML for the display of tiles
+     <div className="MemoryGame">  
       <div >
        <Animated animationIn="zoomInUp" animationOut="zoomInUp" isVisible={true}>
 
+        <div className="container" id="memory">
         <div className="mui-panel wrapper col-md-10">
 
           {this.ImagePieces.map((text, i) => {
@@ -99,12 +101,15 @@ class MemoryGame extends React.Component {
            <div className='col-md-2'>
            <a href="/memory"><input type="button"className="Mybutton" value="Play Again"></input></a>
       </div>
+
+      </div>
         </div>
         </Animated>
 
       </div>
+      
      
-
+      </div>
 
     )
   }

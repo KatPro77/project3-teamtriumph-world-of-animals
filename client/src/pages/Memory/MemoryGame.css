@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-body {
+
+#memory {
+=======
+.MemoryGame {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   background: url(./bg.jpg);
@@ -88,7 +91,7 @@ img {
   }
 }
 
-@media all and (min-width: 1590px) {
+@media all (min-width: 1590px) {
   .wrapper {
     max-width: 51%;
     /* height: 80vh; */
@@ -99,3 +102,4 @@ img {
 
   }
 }
+

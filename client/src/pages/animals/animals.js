@@ -1,5 +1,5 @@
-//susan added some code here just to be able to test the navbar link to this page; the javascript below may need to be updated -- LEAH & JORDAN Pls let's chat about this page/habitats page. 
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import './animals.css'
 import { withStyles } from '@material-ui/core/styles';
 // import SearchCard from '../../components/searchbar/searchbar.js'
@@ -27,13 +27,20 @@ const styles = theme => ({
 
 
 class Animals extends Component {
+=======
+import './Animals.css';
+import SearchCard from '../../components/searchbar/searchbar.js';
+import MediaCard from '../../components/searchresults/searchresults.js';
+>>>>>>> 2da16cc80d6936ce6723b89719c021f8f2feae03
 
   render() {
   
     
     return (
-     
+
+
       <div>
+<<<<<<< HEAD
        <TextField
           id="outlined-search"
           label="Search for an Animal..."
@@ -42,10 +49,18 @@ class Animals extends Component {
           variant="outlined"
         />
        <MediaCard />
+=======
+        <SearchCard />
+        <div className="card-container">
+          <MediaCard />
+        </div>
+>>>>>>> 2da16cc80d6936ce6723b89719c021f8f2feae03
       </div>
-
     );
   }
 }
+<<<<<<< HEAD
 
 export default withStyles(styles)(Animals)
+=======
+>>>>>>> 2da16cc80d6936ce6723b89719c021f8f2feae03

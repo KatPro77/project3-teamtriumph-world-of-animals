@@ -54,14 +54,6 @@ class SimpleModal extends React.Component {
   render() {
     const { classes } = this.props;
 
-const gorillaCam = [
-        {
-          alt:'gorilla cam',
-          src: "https://www.youtube.com/embed/pHtOPHLhQME",
-          title: 'Gorilla Cam',
-          width: '33%',
-        },
-      ];
 
     return (
 

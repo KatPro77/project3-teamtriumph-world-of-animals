@@ -9,11 +9,11 @@
 /* eslint-disable id-length */
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-// import CheckBox from '../components/userauthentication/CheckBox';
-import Input from '../components/Input';
-// import TextArea from '../components/userauthentication/TextArea';
-// import Select from '../components/userauthentication/Select';
-import Button from '../components/Button';
+import CheckBox from '../CheckBox';
+import Input from '../Input';
+import TextArea from '../TextArea';
+import Select from '../Select';
+import Button from '../Button';
 
 class FormContainer extends Component {
   constructor(props) {
@@ -128,38 +128,39 @@ class FormContainer extends Component {
     this.setState({
       newUser: {
         name: '',
-        age: ''
+        age: '',
+        email: ''
       }
     });
   }
 
   render() {
     return (
-      <form className="container-fluid" onSubmit={this.handleFormSubmit}>
+      <form className="container" onSubmit={this.handleSubmit}>
         <Input
           inputType={'text'}
-          title={'Full Name'}
+          title={'Full Name     '}
           name={'name'}
           value={this.state.newUser.name}
-          placeholder={'Enter your name'}
+          placeholder={'      Enter your name '}
           handleChange={this.handleInput}
         />{' '}
         {/* Name of the user */}
         <Input
           inputType={'number'}
           name={'age'}
-          title={'Age'}
+          title={'Age     '}
           value={this.state.newUser.age}
-          placeholder={'Enter your age'}
+          placeholder={'      Enter your age'}
           handleChange={this.handleAge}
         />{' '}
         {/* Age */}
         <Input
           inputType={'text'}
-          title={'Email Address'}
+          title={'Email Address     '}
           name={'email'}
           value={this.state.newUser.email}
-          placeholder={'Enter your amail'}
+          placeholder={'      Enter your email'}
           handleChange={this.handleInput}
         />{' '}
         {/* Email */}
@@ -183,7 +184,7 @@ class FormContainer extends Component {
 }
 
 const buttonStyle = {
-  margin: '10px 10px 10px 10px'
+  margin: '20px 20px 20px 20px'
 };
 
 export default FormContainer;
