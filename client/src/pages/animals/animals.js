@@ -8,11 +8,13 @@ import MediaCard from '../../components/searchresults/searchresults.js'
 export default class Animals extends Component {
   render() {
     return (
-     
+
+
       <div>
-       <SearchCard />
-       <MediaCard />
-        
+        <SearchCard />
+        <div className="card-container">
+          <MediaCard />
+        </div>
       </div>
 
     );

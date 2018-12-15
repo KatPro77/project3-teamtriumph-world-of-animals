@@ -1,1 +1,1 @@
-export {default} from './Playfish.js';
+export {default} from './playfish.js';

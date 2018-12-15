@@ -135,7 +135,7 @@ class FormContainer extends Component {
 
   render() {
     return (
-      <form className="container-fluid" onSubmit={this.handleFormSubmit}>
+      <form className="loginForm" onSubmit={this.handleFormSubmit}>
         <Input
           inputType={'text'}
           title={'Full Name'}
