@@ -1,0 +1,102 @@
+
+#playfish {
+    background: url(../../pages/Playfish/images/background-fishGame.png) no-repeat;
+    background-size: 100%;
+}
+
+#targetNumber {
+    float: left;
+    color: rgb(238, 221, 221);
+    margin-top: 10px;
+}
+
+#random {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#randomNumber {
+    font-size: 80px;
+    text-shadow: 2px 2px black;
+}
+
+#totalPoints {
+    float: left;
+    color: rgb(238, 221, 221);
+    margin-top: 0;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#totalNumber {
+    font-size: 80px;
+    text-shadow: 2px 2px black;
+}
+
+/* //wins and loss score board */
+.card-body {
+    float: right;
+    margin-right: 350px;
+    color:  rgb(241, 246, 248);
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+}
+
+#wins, #loss {
+    font-weight: bold;
+}
+
+.row {
+    margin-top: 100px;
+}
+
+
+/* //crystals and text styling */
+#skullRow {
+    padding: 10px 0px 0px 250px;
+    width: 120%;
+    margin-top: 0;
+}
+
+#red {
+    /* border: 1px;
+    border-radius: 50%; */
+    margin-right: 8px;
+}
+
+#blue {
+    /* border: 1px;
+    border-radius: 50%; */
+    margin-right: 8px;
+}
+ 
+#yellow {
+    /* border: 1px;
+    border-radius: 50%; */
+    margin-right: 8px;
+} 
+
+/* #green {
+    border: 1px;
+    border-radius: 150%;
+}  */
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    font-size: 14px;
+    color: rgb(40, 56, 207);
+    padding: 20px;
+}
+
+p {
+    color: rgb(40, 56, 207);
+    font-size: 40px;
+}
+
+
