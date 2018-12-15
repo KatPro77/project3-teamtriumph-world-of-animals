@@ -9,11 +9,11 @@
 /* eslint-disable id-length */
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import CheckBox from '../components/CheckBox';
-import Input from '../components/Input';
-import TextArea from '../components/TextArea';
-import Select from '../components/Select';
-import Button from '../components/Button';
+import CheckBox from '../CheckBox';
+import Input from '../Input';
+import TextArea from '../TextArea';
+import Select from '../Select';
+import Button from '../Button';
 
 class FormContainer extends Component {
   constructor(props) {
@@ -136,11 +136,7 @@ class FormContainer extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
-      <form className="loginForm" onSubmit={this.handleFormSubmit}>
-=======
       <form className="container" onSubmit={this.handleSubmit}>
->>>>>>> a9f169972dc8e6f1cea8fb5b935c5f7a87f8ac7a
         <Input
           inputType={'text'}
           title={'Full Name     '}
