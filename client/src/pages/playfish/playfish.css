@@ -1,11 +1,7 @@
-body {
-    background: url(../../../public/static/media/playfish/background-fishGame.png) no-repeat;
-    background-size: 100%;
-        
-}
 
-.container {
-    margin-top: 180px;
+#playfish {
+    background: url(../../pages/Playfish/images/background-fishGame.png) no-repeat;
+    background-size: 100%;
 }
 
 #targetNumber {
@@ -94,65 +90,13 @@ h1 {
 
 h2 {
     font-size: 14px;
-    color: white;
+    color: rgb(40, 56, 207);
     padding: 20px;
 }
 
 p {
-    color: rgb(241, 235, 237);
+    color: rgb(40, 56, 207);
     font-size: 40px;
 }
 
 
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
-    #totalPoints {
-        width: 100%;
-    }
-    #skullRow {
-        width: 100%;
-    }
-    #targetNumber {
-        width: 100%;
-    }
-    .card {
-        width: 100%;
-    }
-}
-
-@media (max-width: 640px) {
-    .container {
-        width: 100%;
-    }
-    #totalPoints {
-        width: 100%;
-    }
-    #skullRow {
-        width: 100%;
-    }
-    #targetNumber {
-        width: 100%;
-    }
-    .card {
-        width: 100%;
-    }
-}
-@media (max-width: 980px) {
-    .container {
-        width: 100%;
-    }
-    #totalPoints {
-        width: 100%;
-    }
-    #skullRow {
-        width: 100%;
-    }
-    #targetNumber {
-        width: 100%;
-    }
-    .card {
-        width: 100%;
-    }
-}
