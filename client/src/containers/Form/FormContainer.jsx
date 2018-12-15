@@ -8,15 +8,17 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable id-length */
 /* eslint-disable no-unused-vars */
+
+
 import React, { Component } from 'react';
-import CheckBox from '../components/userauthentication/CheckBox';
-import Input from '../components/userauthentication/Input';
-import TextArea from '../components/userauthentication/TextArea';
-import Select from '../components/userauthentication/Select';
-import Button from '../components/userauthentication/Button';
+import CheckBox from '../CheckBox';
+import Input from '../Input';
+import TextArea from '../TextArea';
+import Select from '../Select';
+import Button from '../Button'; 
 
 class FormContainer extends Component {
-  constructor(props) {
+  constructor(props) {  
     super(props);
 
     this.state = {
