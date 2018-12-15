@@ -74,7 +74,7 @@ class Animals extends Component {
         
         <div className='card-container'>
        <MediaCard 
-      //  searchresults results={this.state.results}
+  
        />
        </div>
       </div>

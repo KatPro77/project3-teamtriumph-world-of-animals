@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import './Cams.css'
 import MediaCard from '../../components/mediacard/mediacard.js';
-import SimpleModalWrapped from '../../components/Modal/Modal.js';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
+
 
 const Animals = [
   {
@@ -92,7 +91,7 @@ class Cams extends Component {
       justify='center'
       >
         {Animals.map(Animal => (
-        <MediaCard onClick={this.handleOpen}
+        <MediaCard
           id={Animal.id}
           key={Animal.id}
           h2={Animal.h2}
@@ -101,10 +100,6 @@ class Cams extends Component {
           width={Animal.width}>
         </MediaCard>
         ))}
-           <SimpleModalWrapped
-                show={this.state.handleOpen}
-                onClose={this.handleClose}>
-             </SimpleModalWrapped>
        </Grid> 
       </div>
     );
