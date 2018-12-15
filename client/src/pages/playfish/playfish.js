@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import './playfish.css';
-
-
+import './Playfish.css';
 
 export default class PlayFish extends Component {
   render() {
@@ -36,14 +34,10 @@ export default class PlayFish extends Component {
                 <button id="green" className="col-sm-2 text-center skull sDown"/><img src="components/playfish/images/4-clown-green.jpg" className="img-responsive icons" alt="Green Fish" />		
       </div>
 
-
-
                 <div className="row" id="totalPoints">
                   <h3 className="text-center" id="score">Your Total Score:</h3>
                   <h1 className="numberBox text-center" id="totalNumber">0</h1>
                 </div>
-
-
 
                 <br />
                 <br />
@@ -83,17 +77,15 @@ $(document).ready(function () {
     // console.log("#random" + random);
 
     // random numbers for each skull (1-12) 
-    var red = Math.floor(Math.random()*12) + 1;
-    var blue = Math.floor(Math.random()*12) + 1;
-    var yellow = Math.floor(Math.random()*12) + 1;
-    var green = Math.floor(Math.random()*12) + 1;
+    const red = Math.floor(Math.random()*12) + 1;
+    const blue = Math.floor(Math.random()*12) + 1;
+    const yellow = Math.floor(Math.random()*12) + 1;
+    const green = Math.floor(Math.random()*12) + 1;
  
     // console.log(red);
     // console.log(blue);
     // console.log(yellow);
     // console.log(green);
-
-
 
     //Start the game
     function gameStart() {
@@ -105,7 +97,6 @@ $(document).ready(function () {
         green = Math.floor(Math.random()*12) + 1;
         playerScore = 0;
         $("#totalNumber").text(playerScore);
-    
     }
 
      // Display wins
@@ -115,6 +106,7 @@ $(document).ready(function () {
         $("#wins").text(wins);
         gameStart();
     }
+      
     // Display losses
     function gameOver(){
         alert ("GAME OVER! Try again!");
@@ -176,13 +168,14 @@ $(document).ready(function () {
               gameOver();
             }   
       })
-
-      gameStart();
-
-   
-
-                      
+      gameStart();            
 </div>
               );
             }
           }
+=======
+export default class Playfish extends Component {
+  render() {
+    return <h1>Hello from Playfish</h1>;
+  }
+}

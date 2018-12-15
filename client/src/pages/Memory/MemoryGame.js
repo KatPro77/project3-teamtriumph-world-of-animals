@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './MemoryGame.css';
 import {Animated} from "react-animated-css";
 
+
 class MemoryGame extends React.Component {
   constructor(props) {
    super(props);
@@ -80,7 +81,7 @@ class MemoryGame extends React.Component {
 
   render() {
     return(
-        // render the main HTML for the display of tiles
+     <div className="MemoryGame">  
       <div >
        <Animated animationIn="zoomInUp" animationOut="zoomInUp" isVisible={true}>
 
@@ -108,7 +109,7 @@ class MemoryGame extends React.Component {
       </div>
       
      
-
+      </div>
 
     )
   }

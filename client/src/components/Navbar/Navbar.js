@@ -51,10 +51,6 @@ export default class Navbar extends Component {
                 </MenuItem>
 
                  <MenuItem onClick={this.handleClose}>
-                <Link to={'/Games'}>Games</Link>
-                </MenuItem>
-
-                 <MenuItem onClick={this.handleClose}>
                 <Link to={'/Playfish'}>Fish Game</Link>
                 </MenuItem>
 

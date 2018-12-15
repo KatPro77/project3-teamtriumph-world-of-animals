@@ -1,10 +1,19 @@
+/* eslint-disable jsx-a11y/img-has-alt */
+/* eslint-disable no-console */
+/* eslint-disable jsx-a11y/img-has-alt */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable jsx-a11y/img-has-alt */
+/* eslint-disable quote-props */
+/* eslint-disable jsx-a11y/img-has-alt */
+/* eslint-disable no-use-before-define */
+/* eslint-disable id-length */
+/* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-
-import CheckBox from '../components/CheckBox';
-import Input from '../components/Input';
-import TextArea from '../components/TextArea';
-import Select from '../components/Select';
-import Button from '../components/Button';
+import CheckBox from '../CheckBox';
+import Input from '../Input';
+import TextArea from '../TextArea';
+import Select from '../Select';
+import Button from '../Button';
 
 class FormContainer extends Component {
   constructor(props) {
@@ -30,7 +39,7 @@ class FormContainer extends Component {
   /* This lifecycle hook gets executed when the component mounts */
 
   handleFullName(e) {
-    let value = e.target.value;
+    const value = e.target.value;
     this.setState(
       (prevState) => ({
         newUser: {
@@ -43,7 +52,7 @@ class FormContainer extends Component {
   }
 
   handleAge(e) {
-    let value = e.target.value;
+    const value = e.target.value;
     this.setState(
       (prevState) => ({
         newUser: {
@@ -56,7 +65,7 @@ class FormContainer extends Component {
   }
 
   handleEmailAddress(e) {
-    let value = e.target.value;
+    const value = e.target.value;
     this.setState(
       (prevState) => ({
         newUser: {
@@ -69,8 +78,8 @@ class FormContainer extends Component {
   }
 
   handleInput(e) {
-    let value = e.target.value;
-    let name = e.target.name;
+    const value = e.target.value;
+    const name = e.target.name;
     this.setState(
       (prevState) => ({
         newUser: {
@@ -84,7 +93,7 @@ class FormContainer extends Component {
 
   handleTextArea(e) {
     console.log('Inside handleTextArea');
-    let value = e.target.value;
+    const value = e.target.value;
     this.setState(
       (prevState) => ({
         newUser: {
@@ -98,7 +107,7 @@ class FormContainer extends Component {
 
   handleFormSubmit(e) {
     e.preventDefault();
-    let userData = this.state.newUser;
+    const userData = this.state.newUser;
 
     fetch('http://example.com', {
       method: 'POST',
@@ -119,38 +128,39 @@ class FormContainer extends Component {
     this.setState({
       newUser: {
         name: '',
-        age: ''
+        age: '',
+        email: ''
       }
     });
   }
 
   render() {
     return (
-      <form className="container-fluid" onSubmit={this.handleFormSubmit}>
+      <form className="container" onSubmit={this.handleSubmit}>
         <Input
           inputType={'text'}
-          title={'Full Name'}
+          title={'Full Name     '}
           name={'name'}
           value={this.state.newUser.name}
-          placeholder={'Enter your name'}
+          placeholder={'      Enter your name '}
           handleChange={this.handleInput}
         />{' '}
         {/* Name of the user */}
         <Input
           inputType={'number'}
           name={'age'}
-          title={'Age'}
+          title={'Age     '}
           value={this.state.newUser.age}
-          placeholder={'Enter your age'}
+          placeholder={'      Enter your age'}
           handleChange={this.handleAge}
         />{' '}
         {/* Age */}
         <Input
           inputType={'text'}
-          title={'Email Address'}
+          title={'Email Address     '}
           name={'email'}
           value={this.state.newUser.email}
-          placeholder={'Enter your amail'}
+          placeholder={'      Enter your email'}
           handleChange={this.handleInput}
         />{' '}
         {/* Email */}
@@ -160,7 +170,7 @@ class FormContainer extends Component {
           title={'Submit'}
           style={buttonStyle}
         />{' '}
-        {/*Submit */}
+        {/* Submit */}
         <Button
           action={this.handleClearForm}
           type={'secondary'}
@@ -174,7 +184,7 @@ class FormContainer extends Component {
 }
 
 const buttonStyle = {
-  margin: '10px 10px 10px 10px'
+  margin: '20px 20px 20px 20px'
 };
 
 export default FormContainer;
