@@ -1,1 +1,1 @@
-export { default } from './landing.js';
+export { default } from './Landing.js';

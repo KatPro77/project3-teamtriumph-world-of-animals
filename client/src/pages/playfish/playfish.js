@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import './playfish.css';
-
-
+import './Playfish.css';
 
 export default class Playfish extends Component {
   render() {
-    return (
-     <h1>Hello from playfish</h1>
-    );
+    return <h1>Hello from Playfish</h1>;
   }
 }
