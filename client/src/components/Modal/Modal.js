@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
-import { CardMedia } from '@material-ui/core';
+import CardMedia from '@material-ui/core/CardMedia';
+
+
+
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -28,6 +32,7 @@ const styles = theme => ({
     boxShadow: theme.shadows[5],
     padding: theme.spacing.unit * 4,
   },
+
   media: {
     objectfit: 'cover',
   },
@@ -45,7 +50,7 @@ class SimpleModal extends React.Component {
   handleClose = () => {
     this.setState({ open: false });
   };
-  
+
   render() {
     const { classes } = this.props;
 
@@ -61,10 +66,8 @@ const gorillaCam = [
     return (
 
       <div>
-             <Button onClick={this.handleOpen}>
-              {/* <ButtonBases /> */}
-             </Button>
-  
+        <Typography gutterBottom>Click to get the full Modal experience!</Typography>
+        <Button onClick={this.handleOpen}>Open Modal</Button>
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
@@ -98,5 +101,3 @@ SimpleModal.propTypes = {
 const SimpleModalWrapped = withStyles(styles)(SimpleModal);
 
 export default SimpleModalWrapped;
-
-

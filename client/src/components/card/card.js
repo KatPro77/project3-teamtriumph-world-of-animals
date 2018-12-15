@@ -14,7 +14,7 @@ const styles = {
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    height: 600,
   },
 };
 
@@ -25,7 +25,7 @@ function MediaCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="http://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/cc_iStock_18996432_LARGE_16x9.jpg"
           title="Contemplative Reptile"
         />
         <CardContent>
