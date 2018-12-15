@@ -4,18 +4,20 @@ import { withStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
+
 const styles = theme => ({
   root: {
-    display: 'flex',
+    display: "left",
     flexWrap: 'wrap',
     minWidth: 300,
-    width: '100%',
+    width: 700,
+    margin: theme.spacing.unit
   },
   image: {
     position: 'relative',
-    height: 200,
+    height: 300,
     [theme.breakpoints.down('xs')]: {
-      width: '100% !important', // Overrides inline-style
+      width: 100,
       height: 100,
     },
     '&:hover, &$focusVisible': {
@@ -83,7 +85,7 @@ function ButtonBases(props) {
 
   return (
     <div className={classes.root}>
-        <ButtonBase
+        <ButtonBase 
           focusRipple
           key={classes.title}
           className={classes.image}
@@ -111,7 +113,6 @@ function ButtonBases(props) {
             </Typography>
           </span>
         </ButtonBase>
-      {/* ))} */}
     </div>
   );
 }

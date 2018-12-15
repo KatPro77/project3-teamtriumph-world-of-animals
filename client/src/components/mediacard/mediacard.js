@@ -7,41 +7,43 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
-import './card.css'
+import Typography from '@material-ui/core/Typography';
 
-const styles = {
+const styles = theme => ({
   card: {
-    width: 1000,
-
+    maxWidth: 345,
+    alignItems: 'center',
+    margin: theme.spacing.unit
   },
   media: {
-    height: 600,
+    height: 300,
+    width: 300,
   },
-};
+});
+
 
 function MediaCard(props) {
   const { classes } = props;
   return (
-    <div className= 'cardStyle'>
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="http://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/cc_iStock_18996432_LARGE_16x9.jpg"
-          title="Contemplative Reptile"
-          />
+          image={props.image}
+          title={props.title}
+        />
         <CardContent>
-         
+          <Typography gutterBottom variant="h5" component="h2">
+            {props.h2}
+          </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-    
         <Button size="small" color="primary">
-          Play Game!
+                View Live Cam!
         </Button>
       </CardActions>
     </Card>
-    </div>
   );
 }
 

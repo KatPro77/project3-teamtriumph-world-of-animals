@@ -16,6 +16,7 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <CssBaseline />
           <Navbar />
           <Switch>
             <Route exact path="/" component={Landing} />
