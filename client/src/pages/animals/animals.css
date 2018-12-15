@@ -1,3 +1,6 @@
+.animal-search {
+    background:linear-gradient(#dce35b,#45b649);  
+}
 .card-container {
     display:flex;
     justify-content: center;

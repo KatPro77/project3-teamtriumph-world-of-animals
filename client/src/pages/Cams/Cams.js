@@ -21,9 +21,9 @@ const Animals = [
 class Cams extends Component {
 
   
- s
   render() {
     return (
+      <div className='cams'>
       <div>
         {Animals.map(Animal => (
         <ButtonBases
@@ -34,6 +34,7 @@ class Cams extends Component {
           width={Animal.width}
           />
         ))}
+      </div>
       </div>
     );
   }
