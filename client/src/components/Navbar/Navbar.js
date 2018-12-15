@@ -27,7 +27,7 @@ export default class Navbar extends Component {
      <div>
        <AppBar position="static">
          <Toolbar>
-           <IconButton color="inherit" aria-label="Menu">
+           <IconButton aria-label="Menu" className='icon'>
              <Menu
                id="simple-menu"
                anchorEl={anchorEl}
@@ -63,14 +63,7 @@ export default class Navbar extends Component {
              aria-haspopup="true"
              onClick={this.handleClick}
            ></    Button>
-
-           {/* <Button
-             aria-owns={anchorEl ? 'myspace' : undefined}
-             aria-haspopup="true"
-             onClick={this.handleClick}
-           >
-             Open Menu
-           </Button> */}
+           
          </Toolbar>
        </AppBar>
      </div>

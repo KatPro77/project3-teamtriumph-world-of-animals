@@ -1,9 +1,15 @@
-<<<<<<< HEAD
-.searchpanel {
+
+.animal-search {
+    background:linear-gradient(#dce35b,#45b649);  
+}
+
+/* .searchpanel {
     width: '50%'
-=======
+    display:flex;
+    justify-content: center; */
+    
 .card-container {
     display:flex;
-    justify-content: center;
->>>>>>> 2da16cc80d6936ce6723b89719c021f8f2feae03
+    justify-content: center; 
+
 }

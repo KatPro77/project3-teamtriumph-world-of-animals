@@ -69,12 +69,13 @@ class SimpleModal extends React.Component {
           <div style={getModalStyle()} className={classes.paper}>
                 <CardMedia
                      component="iframe"
-                     alt={gorillaCam.alt}
+                    //  alt={gorillaCam.alt}
                      className={classes.media}
                      height="315"
                      width="560"
                      src= "https://www.youtube.com/embed/pHtOPHLhQME"
-                     title={gorillaCam.title}>
+                    //  title={gorillaCam.title}
+                     >
                 </CardMedia>
             <SimpleModalWrapped />
           </div>
