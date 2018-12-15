@@ -7,7 +7,7 @@ import Carousel from '../../components/carousel/carousel.js';
 export default class Landing extends Component {
  render() {
    return (
-     <div>
+     <div className="landing">
        <FormContainer />
        {/* <UserAuthentication /> */}
        <Carousel />
@@ -15,4 +15,3 @@ export default class Landing extends Component {
    );
  }
 }
-
