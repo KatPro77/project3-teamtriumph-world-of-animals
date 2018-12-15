@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 
-#memory {
-=======
 .MemoryGame {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -10,6 +8,7 @@
   background-size: cover;
 
 }
+
 .Mybutton{
   background: #b6f935;
   background-size: cover;
@@ -19,8 +18,6 @@
   border-radius: 17px;
   font-size: 14px;
   font-weight: 700;
-
-
 }
 
 .modal {

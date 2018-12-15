@@ -1,15 +1,15 @@
-<<<<<<< HEAD
+
 .animal-search {
     background:linear-gradient(#dce35b,#45b649);  
 }
-=======
-<<<<<<< HEAD
-.searchpanel {
+
+/* .searchpanel {
     width: '50%'
-=======
->>>>>>> 7318f68a346a8bc0bfb3fcd8296c567ac77c2c6b
+    display:flex;
+    justify-content: center; */
+    
 .card-container {
     display:flex;
-    justify-content: center;
->>>>>>> 2da16cc80d6936ce6723b89719c021f8f2feae03
+    justify-content: center; 
+
 }

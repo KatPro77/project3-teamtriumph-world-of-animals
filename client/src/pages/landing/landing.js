@@ -5,13 +5,13 @@ import FormContainer from '../../containers/Form/FormContainer.jsx';
 import Carousel from '../../components/carousel/carousel.js';
 
 export default class Landing extends Component {
- render() {
-   return (
-     <div className="landing">
-       <FormContainer />
-       {/* <UserAuthentication /> */}
-       <Carousel />
-     </div>
-   );
- }
+  render() {
+    return (
+      <div className="landing">
+        <FormContainer />
+        {/* <UserAuthentication /> */}
+        <Carousel />
+      </div>
+    );
+  }
 }

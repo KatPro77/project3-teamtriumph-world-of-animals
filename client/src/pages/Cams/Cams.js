@@ -69,9 +69,6 @@ width: '60%'
 
 class Cams extends Component {
 
-<<<<<<< HEAD
-  
-=======
   state = {
     open: false,
   };
@@ -84,22 +81,16 @@ class Cams extends Component {
     this.setState({ open: false });
   };
 
->>>>>>> 7318f68a346a8bc0bfb3fcd8296c567ac77c2c6b
   render() {
     
 
     return (
-<<<<<<< HEAD
-      <div className='cams'>
-      <div>
-=======
       <div className = "Cams">
       <Grid
       container
       item ='auto'
       justify='center'
       >
->>>>>>> 7318f68a346a8bc0bfb3fcd8296c567ac77c2c6b
         {Animals.map(Animal => (
         <MediaCard onClick={this.handleOpen}
           id={Animal.id}
@@ -115,7 +106,6 @@ class Cams extends Component {
                 onClose={this.handleClose}>
              </SimpleModalWrapped>
        </Grid> 
-      </div>
       </div>
     );
   }
